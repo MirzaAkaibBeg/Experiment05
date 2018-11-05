@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="ORDER FOOD"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <CheckBox
+        android:id="@+id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="113dp"
+        android:onClick="burger"
+        android:text="Pizza-Rs.260" />
+
+    <CheckBox
+        android:id="@+id/chowmine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pizza"
+        android:layout_alignLeft="@+id/pizza"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="203dp"
+        android:layout_marginLeft="203dp"
+        android:layout_marginTop="154dp"
+        android:onClick="chowmin"
+        android:text="Chowmin-Rs.50" />
+
+    <CheckBox
+        android:id="@+id/Pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pizza"
+        android:layout_alignLeft="@+id/pizza"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="220dp"
+        android:onClick="pizza"
+        android:text="Pizza-Rs.99" />
+
+    <CheckBox
+        android:id="@+id/hotdog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pizza"
+        android:layout_centerVertical="true"
+        android:text="HotDog-Rs.70"
+        android:onClick="hotdog"
+        android:layout_alignLeft="@+id/pizza" />
+
+    <CheckBox
+        android:id="@+id/pasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pizza"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="man"
+        android:text="Fries-Rs.100" />
+
+    <CheckBox
+        android:id="@+id/coke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pasta"
+        android:layout_alignLeft="@+id/pasta"
+        android:layout_alignTop="@+id/chowmine"
+        android:onClick="pasta"
+        android:text="Coke-Rs40" />
+
+    <CheckBox
+        android:id="@+id/sandwich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pasta"
+        android:layout_alignStart="@+id/pasta"
+        android:layout_alignTop="@+id/Pizza"
+        android:onClick="sand"
+        android:text="Sandwich-Rs.60" />
+
+    <CheckBox
+        android:id="@+id/pasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pasta"
+        android:layout_alignLeft="@+id/pasta"
+        android:layout_alignTop="@+id/hotdog"
+        android:layout_marginStart="-42dp"
+        android:layout_marginLeft="-42dp"
+        android:layout_marginTop="0dp"
+        android:onClick="fries"
+        android:text="French fries-Rs.50" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="158dp"
+        android:layout_marginStart="128dp"
+        android:text="Order Placed"
+        android:onClick="order"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="128dp" />
+
+
+</RelativeLayout>
